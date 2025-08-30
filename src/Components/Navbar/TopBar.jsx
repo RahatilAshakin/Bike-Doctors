@@ -1,12 +1,13 @@
+import React from "react";
 import { Clock, Phone, Mail } from "lucide-react";
 
 export default function TopBar() {
   return (
-    <div id="home" className="w-full bg-gradient-to-r from-gray-900 via-black to-gray-800 shadow-lg ">
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center py-4 px-6 space-y-3 sm:space-y-0">
+    <div className="hidden lg:flex w-full bg-gradient-to-r from-gray-900 via-black to-gray-800 shadow-lg sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto flex flex-row justify-between items-center py-4 px-6">
 
         {/* Logo */}
-        <a href="#home" className="flex items-center space-x-3 hover:scale-105 transition-transform duration-300">
+        <a href="#home" className="flex items-center space-x-3 hover:scale-110 transition-transform duration-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-12 w-12 text-red-500"
@@ -28,10 +29,10 @@ export default function TopBar() {
         </a>
 
         {/* Contact Info */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-3 sm:space-y-0 sm:space-x-6 text-sm">
-          
+        <div className="flex flex-row items-center space-x-6 text-sm">
+
           {/* Opening Time */}
-          <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-md hover:bg-white/20 transition-all duration-300">
+          <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-xl backdrop-blur-md hover:bg-white/20 transition-all duration-300 shadow-md hover:shadow-red-500/50 transform hover:scale-105">
             <Clock className="h-5 w-5 text-red-500" />
             <div className="flex flex-col leading-tight text-white">
               <span className="font-semibold">Opening Time</span>
@@ -39,8 +40,8 @@ export default function TopBar() {
             </div>
           </div>
 
-          {/* Contact Number */}
-          <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-md hover:bg-white/20 transition-all duration-300">
+          {/* Phone */}
+          <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-xl backdrop-blur-md hover:bg-white/20 transition-all duration-300 shadow-md hover:shadow-red-500/50 transform hover:scale-105">
             <Phone className="h-5 w-5 text-red-500" />
             <div className="flex flex-col leading-tight text-white">
               <span className="font-semibold">Phone</span>
@@ -51,7 +52,7 @@ export default function TopBar() {
           </div>
 
           {/* Email */}
-          <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-md hover:bg-white/20 transition-all duration-300">
+          <div className="flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-xl backdrop-blur-md hover:bg-white/20 transition-all duration-300 shadow-md hover:shadow-red-500/50 transform hover:scale-105">
             <Mail className="h-5 w-5 text-red-500" />
             <div className="flex flex-col leading-tight text-white">
               <span className="font-semibold">Email</span>

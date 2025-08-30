@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r  from-black via-gray-900 to-gray-800 shadow-lg sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-black via-gray-900 to-gray-800 shadow-lg sticky top-0 z-50">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 w-full text-white space-x-6">
           {/* Logo */}
@@ -24,42 +24,44 @@ const Navbar = () => {
           </span>
 
           {/* Desktop Menu Items */}
-          <span
-            onClick={() => scrollToSection("home")}
-            className="hover:bg-red-600 px-3 py-1 rounded-md transition duration-300 cursor-pointer font-medium"
-          >
-            HOME
-          </span>
-          <span
-            onClick={() => scrollToSection("services")}
-            className="hover:bg-red-600 px-3 py-1 rounded-md transition duration-300 cursor-pointer font-medium"
-          >
-            SERVICES & PACKAGES
-          </span>
-          <span
-            onClick={() => scrollToSection("gallery")}
-            className="hover:bg-red-600 px-3 py-1 rounded-md transition duration-300 cursor-pointer font-medium"
-          >
-            GALLERY
-          </span>
-          <span
-            onClick={() => scrollToSection("contact")}
-            className="hover:bg-red-600 px-3 py-1 rounded-md transition duration-300 cursor-pointer font-medium"
-          >
-            CONTACT US
-          </span>
-          <span
-            onClick={() => scrollToSection("about")}
-            className="hover:bg-red-600 px-3 py-1 rounded-md transition duration-300 cursor-pointer font-medium"
-          >
-            ABOUT US
-          </span>
-          <span
-            onClick={() => scrollToSection("contact")}
-            className="bg-red-500 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-white hover:text-red-600 hover:shadow-lg transition duration-300 cursor-pointer"
-          >
-            Book Now
-          </span>
+          <div className="hidden md:flex items-center space-x-4">
+            <span
+              onClick={() => scrollToSection("home")}
+              className="hover:bg-red-600 px-3 py-1 rounded-md transition duration-300 cursor-pointer font-medium"
+            >
+              HOME
+            </span>
+            <span
+              onClick={() => scrollToSection("services")}
+              className="hover:bg-red-600 px-3 py-1 rounded-md transition duration-300 cursor-pointer font-medium"
+            >
+              SERVICES & PACKAGES
+            </span>
+            <span
+              onClick={() => scrollToSection("gallery")}
+              className="hover:bg-red-600 px-3 py-1 rounded-md transition duration-300 cursor-pointer font-medium"
+            >
+              GALLERY
+            </span>
+            <span
+              onClick={() => scrollToSection("contact")}
+              className="hover:bg-red-600 px-3 py-1 rounded-md transition duration-300 cursor-pointer font-medium"
+            >
+              CONTACT US
+            </span>
+            <span
+              onClick={() => scrollToSection("about")}
+              className="hover:bg-red-600 px-3 py-1 rounded-md transition duration-300 cursor-pointer font-medium"
+            >
+              ABOUT US
+            </span>
+            <span
+              onClick={() => scrollToSection("contact")}
+              className="bg-red-500 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-white hover:text-red-600 hover:shadow-lg transition duration-300 cursor-pointer"
+            >
+              Book Now
+            </span>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -95,34 +97,34 @@ const Navbar = () => {
 
       {/* Mobile dropdown */}
       {isOpen && (
-        <div className="md:hidden px-6 pb-4 space-y-3 bg-gray-900 rounded-b-lg shadow-inner">
+        <div className="md:hidden px-6 pb-4 space-y-3 bg-gray-900 rounded-b-lg shadow-inner absolute w-full top-16 left-0 z-50">
           <span
             onClick={() => scrollToSection("home")}
-            className="block hover:bg-red-600 px-3 py-1 rounded-md transition cursor-pointer font-medium"
+            className="block hover:bg-red-600 px-3 py-1 rounded-md transition cursor-pointer font-medium text-white"
           >
             HOME
           </span>
           <span
             onClick={() => scrollToSection("about")}
-            className="block hover:bg-red-600 px-3 py-1 rounded-md transition cursor-pointer font-medium"
+            className="block hover:bg-red-600 px-3 py-1 rounded-md transition cursor-pointer font-medium text-white"
           >
             ABOUT US
           </span>
           <span
             onClick={() => scrollToSection("services")}
-            className="block hover:bg-red-600 px-3 py-1 rounded-md transition cursor-pointer font-medium"
+            className="block hover:bg-red-600 px-3 py-1 rounded-md transition cursor-pointer font-medium text-white"
           >
             SERVICES & PACKAGES
           </span>
           <span
             onClick={() => scrollToSection("gallery")}
-            className="block hover:bg-red-600 px-3 py-1 rounded-md transition cursor-pointer font-medium"
+            className="block hover:bg-red-600 px-3 py-1 rounded-md transition cursor-pointer font-medium text-white"
           >
             GALLERY
           </span>
           <span
             onClick={() => scrollToSection("contact")}
-            className="block hover:bg-red-600 px-3 py-1 rounded-md transition cursor-pointer font-medium"
+            className="block hover:bg-red-600 px-3 py-1 rounded-md transition cursor-pointer font-medium text-white"
           >
             CONTACT US
           </span>

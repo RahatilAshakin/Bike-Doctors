@@ -4,6 +4,7 @@ import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 const About = () => {
   return (
     <div id="about" className="container mx-auto my-16 px-4 py-12 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 rounded-3xl shadow-xl">
+      
       {/* Section Header */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-extrabold text-white mb-4">
@@ -16,10 +17,11 @@ const About = () => {
 
       {/* About Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        
         {/* Image */}
         <div className="flex justify-center">
           <img
-            src="https://i.ibb.co.com/fj0Dw3b/imgi-151-Bike-Repair-2.jpg"
+            src="https://i.ibb.co/fj0Dw3b/imgi-151-Bike-Repair-2.jpg"
             alt="Bike Service"
             className="rounded-2xl shadow-2xl object-cover w-full max-w-md hover:scale-105 transition-transform duration-500"
           />
@@ -32,9 +34,9 @@ const About = () => {
           </p>
 
           {/* Social Media */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-semibold text-white mb-2">Follow Us</h3>
-            <div className="flex space-x-4">
+            <div className="flex justify-center md:justify-start space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-600 p-3 rounded-full hover:bg-blue-700 transition transform hover:scale-110">
                 <FaFacebookF />
               </a>
@@ -51,7 +53,7 @@ const About = () => {
           </div>
 
           {/* CTA Button */}
-          <div>
+          <div className="text-center md:text-left">
             <a
               href="#contact"
               className="inline-block mt-4 px-6 py-3 bg-red-500 text-white font-semibold rounded-full shadow-lg hover:bg-red-600 transition transform hover:scale-105 duration-300"
