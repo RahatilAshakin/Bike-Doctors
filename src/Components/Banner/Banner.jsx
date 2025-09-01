@@ -2,21 +2,16 @@ import React, { useState, useEffect } from "react";
 
 const Banner = () => {
   const images = [
- 
-  "https://i.ibb.co/BV9zSDSJ/imgi-156-236087-bike-service.jpg",
- 
-  "https://i.ibb.co/r2Drq23t/imgi-222-In-person-slim-C.jpg",
-  "https://i.ibb.co/99k8Gh4n/imgi-226-bike-repair-store.png",
-  "https://i.ibb.co.com/NB6dXj6/imgi-2-bike-service-in-faridabad.jpg",
-  "https://i.ibb.co.com/x8s69p2P/imgi-45-bike-repair.jpg",
-  "https://i.ibb.co.com/dwbdFkHg/imgi-47-20240415115642.jpg",
-  "https://i.ibb.co.com/Jj6GDzsh/imgi-52-mechanic-using-a-hex-key-or-allen-wrench-to-remove-motorcycle-rear-hydraulic-brake-pump-work.jpg",
-  "https://i.ibb.co.com/hJKZWwgx/imgi-53-1742887966008-mobile-motorcycle-mechanic.jpg",
-  "https://i.ibb.co.com/zT8nDMNH/imgi-55-Motorbike-Inspection-Repair-Course-scaled.jpg",
-  // "https://i.ibb.co.com/XfrCDhmH/imgi-60-bike-service-at-home.jpg",
-  // "https://i.ibb.co/CD884RK/imgi-165-bike-repairing-services.jpg",
-  //  "https://i.ibb.co/fj0Dw3b/imgi-151-Bike-Repair-2.jpg"
-];
+    "https://i.ibb.co/BV9zSDSJ/imgi-156-236087-bike-service.jpg",
+    "https://i.ibb.co/r2Drq23t/imgi-222-In-person-slim-C.jpg",
+    "https://i.ibb.co/99k8Gh4n/imgi-226-bike-repair-store.png",
+    "https://i.ibb.co.com/NB6dXj6/imgi-2-bike-service-in-faridabad.jpg",
+    "https://i.ibb.co.com/x8s69p2P/imgi-45-bike-repair.jpg",
+    "https://i.ibb.co.com/dwbdFkHg/imgi-47-20240415115642.jpg",
+    "https://i.ibb.co.com/Jj6GDzsh/imgi-52-mechanic-using-a-hex-key-or-allen-wrench-to-remove-motorcycle-rear-hydraulic-brake-pump-work.jpg",
+    "https://i.ibb.co.com/hJKZWwgx/imgi-53-1742887966008-mobile-motorcycle-mechanic.jpg",
+    "https://i.ibb.co.com/zT8nDMNH/imgi-55-Motorbike-Inspection-Repair-Course-scaled.jpg",
+  ];
 
   const [current, setCurrent] = useState(0);
 
@@ -32,16 +27,17 @@ const Banner = () => {
   const nextSlide = () => setCurrent((prev) => (prev + 1) % images.length);
 
   return (
-    <div className="w-full mt-10 relative px-4 md:px-0">
+    <div id="home" className="w-full mt-10 relative px-4 md:px-0">
       {/* Heading */}
       <div className="text-center mb-8 max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-5xl font-bold text-gray-300 mb-4 drop-shadow-md">
-          Service <span className="text-red-600">Offering</span>
+          Total <span className="text-red-600">Tech Care</span>
         </h1>
         <p className="text-gray-400 text-base md:text-lg leading-relaxed drop-shadow-sm">
-          MotoMechs strives to offer <span className="font-semibold">affordable, quality, and professional services</span>.
-          We are a multibrand bike service center providing all kinds of repair and maintenance for all ranges of bikes, 
-          regardless of size, capacity, make, or model.
+          At <span className="font-semibold">Total Tech Care</span>, we provide{" "}
+          <span className="font-semibold">affordable, reliable, and professional solutions</span> 
+          for all your bike service needs. From routine maintenance to advanced repairs, 
+          our expert team ensures top-quality care for every model and make.
         </p>
       </div>
 

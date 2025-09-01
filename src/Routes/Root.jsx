@@ -15,16 +15,20 @@ const Root = () => {
       {/* Header full width */}
       <header className="w-full">{/* <Header /> */}</header>
 
-      {/* Navbar */}
-      <Navbar />
+      {/* TopBar (sticky) */}
+      <div className="sticky top-0 z-50 bg-gray-900 shadow-md">
+        <div className="max-w-7xl mx-auto px-4">
+          <TopBar />
+        </div>
+      </div>
 
-      {/* TopBar */}
-      <div className="max-w-7xl mx-auto px-4">
-        <TopBar />
+      {/* Navbar (sticky, below TopBar) */}
+      <div className="sticky top-[80px] z-40 bg-gray-900 shadow-md">
+        <Navbar />
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 space-y-16">
+      <div className="max-w-7xl mx-auto px-4 space-y-16 mt-8">
         {/* Banner */}
         <div className="bg-black/40 rounded-2xl p-4 shadow-lg">
           <Banner />

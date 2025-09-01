@@ -50,10 +50,10 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start">
           <img
             src="/logo.png"
-            alt="Bike Doctors"
+            alt="Total Tech Care"
             className="w-20 mb-4"
           />
-          <p className="text-sm">© 2025 - Bike Doctors</p>
+          <p className="text-sm">© 2025 - Total Tech Care</p>
           <p className="text-sm">All Rights Reserved</p>
         </div>
 
